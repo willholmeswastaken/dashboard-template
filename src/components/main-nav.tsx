@@ -9,6 +9,7 @@ import { useState } from "react"
 import { Button, buttonVariants } from "./ui/button"
 import { type getCurrentUser } from "@/lib/session"
 import { type UnwrapPromise } from "@/types/unwrap-promise"
+import EnvironmentSelector from "./environment-selector"
 
 export function MainNav({
     user
@@ -55,6 +56,7 @@ export function MainNav({
                             </Link>
                         ))
                     }
+                    <EnvironmentSelector />
                 </div>
                 {
                     user !== undefined ?

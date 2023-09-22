@@ -1,5 +1,4 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { PlusIcon } from "lucide-react";
+import AppCard from "@/components/app-card";
 
 export default function Apps() {
     return (
@@ -8,17 +7,7 @@ export default function Apps() {
                 <h1 className="text-xl">Apps</h1>
             </section>
             <section>
-                <Card className="w-[350px] hover:cursor-pointer hover:border-foreground ">
-                    <CardHeader>
-                        <CardTitle>Install App</CardTitle>
-                        <CardDescription>Get started with your first app</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="flex justify-center">
-                            <PlusIcon className="w-12 h-12 text-primary" />
-                        </div>
-                    </CardContent>
-                </Card>
+                <AppCard />
             </section>
         </div>
     )
